@@ -8,6 +8,9 @@
             <log level="custom">
                 <property expression="$ctx:priorities" name="total"/>
             </log>
+            <log>
+                <property value="ERROR" name="error"/>
+            </log>
             <class name="com.knot.uol.RabbitMQ.RabbitMQHandler"/>
             <respond/>
         </inSequence>
