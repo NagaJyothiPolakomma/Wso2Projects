@@ -11,6 +11,9 @@
             <log>
                 <property value="ERROR" name="error"/>
             </log>
+              <log>
+                <property value="jyo" name="error"/>
+            </log>
             <class name="com.knot.uol.RabbitMQ.RabbitMQHandler"/>
             <respond/>
         </inSequence>
