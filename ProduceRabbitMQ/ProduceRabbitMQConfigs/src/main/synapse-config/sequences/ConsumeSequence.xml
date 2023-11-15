@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="ConsumeSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property name="DELAY" scope="default" type="INTEGER" value="20000"/>
+    <script language="js"><![CDATA[var delay = mc.getProperty("DELAY");
+            java.lang.Thread.sleep(delay);]]></script>
+    <log level="full">
+        <property expression="$body" name="Message"/>
+    </log>
+</sequence>
