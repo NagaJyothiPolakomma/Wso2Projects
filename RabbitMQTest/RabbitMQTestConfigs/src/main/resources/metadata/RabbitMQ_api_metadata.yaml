@@ -1,0 +1,11 @@
+---
+key: "RabbitMQ_api-1.0.0"
+name : "RabbitMQ_api"
+displayName : "RabbitMQ_api"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/rabbit"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

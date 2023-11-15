@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/rabbit" name="RabbitMQ_api" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST">
+        <inSequence>
+            <property expression="json-eval($.messages)" name="messages" scope="default" type="STRING"/>
+            <property expression="json-eval($.priority)" name="priority" scope="default" type="STRING"/>
+            <property expression="get-property('RabbitMQLE')" name="priorities" scope="default" type="OM"/>
+            <log level="custom">
+                <property expression="$ctx:priorities" name="total"/>
+            </log>
+            <class name="com.knot.uol.RabbitMQ.RabbitMQHandler"/>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence>
+            <log>
+                <property expression="ERROR_MESSAGE" name="error"/>
+            </log>
+        </faultSequence>
+    </resource>
+</api>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="stored" onError="fault" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log>
+        <property name="storage" value="sucessfully stored in the queue"/>
+    </log>
+</sequence>

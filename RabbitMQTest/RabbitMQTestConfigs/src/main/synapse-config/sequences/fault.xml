@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="fault" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <log>
+        <property expression="get-property('ERROR_CODE')" name="ERROR_CODE"/>
+        <property expression="get-property('ERROR_MESSAGE')" name="ERRROR_MESSAGE"/>
+    </log>
+</sequence>
