@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<sequence name="Sequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
-    <log level="custom">
-        <property expression="get-property('ERROR_CODE')" name="error"/>
-    </log>
-</sequence>
